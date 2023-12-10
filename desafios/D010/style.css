@@ -1,0 +1,24 @@
+*{
+    background-color: ;/*#84E1AD*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-image: linear-gradient(to bottom, #7BE192, #509458,#264D2F);
+    margin: auto;
+    padding: 10px;
+}
+h3{
+    text-align: center;
+    color: #8BB79E;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+nav>a{
+    color: white;
+}
+main{
+    margin: auto;
+    height: 200px;
+}
