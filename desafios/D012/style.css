@@ -4,8 +4,9 @@
     margin: 0;
     padding: 0;
 }
-:root
-    --font1('Passion One');
+:root{
+    --font0: 'Passion One';
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -21,7 +22,7 @@ header h1{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Passion One';
+    font-family: var(--font1);
     font-size: 78.5px;
 }
 header p{
