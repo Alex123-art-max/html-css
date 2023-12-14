@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de excel</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            text-align: center;
+        }
+        table caption{
+            background-color: green;
+            color: white;
+            padding: 1vh;
+            border-radius: .3vh;
+        }
+        table#ex{
+            text-align: center;
+        }
+        table td{
+            background-color: rgb(17, 173, 121);
+            color: rgb(58, 47, 33);
+            border: 1px solid black;
+            padding: 1vh 2vh;
+            border-radius: .3vh;
+        }
+        table td.excel{
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+            padding: 1vh 2vh;
+            border-radius: .3vh;
+        }
+        table td:hover{
+            background-color: blueviolet;
+            color: white;
+            transition: .3s;
+        }
+        table td.excel:hover{
+            background-color: rgb(81, 255, 0);
+            transition: .3s;
+        }
+        table td.excel:active{
+            transform: scale(90%);
+        }
+    </style>
+</head>
+<body>
+    <table id="ex">
+        <tr>
+            <td class="excel">1</td>
+            <td class="excel">2</td>
+            <td class="excel" rowspan="2">3</td>
+            <td class="excel">4</td>
+        </tr>
+        <tr>
+            <td class="excel">5</td>
+            <td class="excel">6</td>
+            <td class="excel">7</td>
+        </tr>
+        <tr>
+            <td class="excel" colspan="3">8</td>
+            <td class="excel">9</td>
+        </tr>
+        <tr>
+            <td class="excel" rowspan="2">10</td>
+            <td class="excel" colspan="2">11</td>
+            <td class="excel">12</td>
+        </tr>
+            <td class="excel">13</td>
+            <td class="excel">14</td>
+            <td class="excel">15</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td colspan="4">A</td>
+            <td rowspan="4">B</td>
+        </tr>
+        <tr>
+            <td rowspan="4">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
+        </tr>
+        <tr>
+            <td colspan="4">N</td>
+        </tr>
+    </table>
+    <table>
+        <caption>teclado númerico</caption>
+        <tr>
+            <td>num</td>
+            <td>/</td>
+            <td>*</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td rowspan="2">+</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td rowspan="2">enter</td>
+        </tr>
+        <tr>
+            <td colspan="2">0</td>
+            <td>,</td>
+        </tr>
+    </table>
+</body>
+</html>
