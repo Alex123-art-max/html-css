@@ -6,12 +6,27 @@
     <title>Controles de Formulários</title>
 </head>
 <body>
-    <h1>Teste de Controles</h1>
-    <form action="">
-        <p>
-            <label for="iphone">Telefone</label>
-            <input type="tel" name="" id="iphone">
-        </p>
-    </form>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="iname" >
+            </p>
+            <p>
+                <label for="iemail">email:</label>
+                <input type="email" name="email" id="iemail">
+            </p>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel-national"placeholder="(xx)xxxx-xxxx" pattern="^\(d{2}\)\d{4,5}-\d{4}$">
+            </p>
+        </fieldset>
+            <p>
+                <input type="submit" name="" id="">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
 </body>
 </html>
